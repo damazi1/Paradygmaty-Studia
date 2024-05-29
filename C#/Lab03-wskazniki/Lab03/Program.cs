@@ -50,7 +50,7 @@
         static Func<string, bool> OdDanejLitry(char znak) => (string wartosc) => wartosc[0] == znak;
         static Func<double, double, double> funkcja1 = (a,b) => a/b;
         static Func <double, double, double> odwroc(Func<double, double, double> funk) => (double a, double b) => funk(b, a);
-        static Func<int, int> zloz(Func<int,int> f1, Func<int,int> f2) => (int x) => f1(f2(x));
+        public static Func<int, int> zloz(Func<int,int> f1, Func<int,int> f2) => (int x) => f1(f2(x));
         static void Main(string[] args)
         {
             List<int> liczby = new List<int>() {1,2,3,4,5};
@@ -92,7 +92,7 @@
             Console.WriteLine("Wynik2 = " + w2);
 
             Console.WriteLine("----- Zadanie 3.2 -----");
-            int res = zloz(PodniesDoKwadratu, Dodaj3)
+            //int res = zloz(PodniesDoKwadratu, Dodaj3)
 
         }
     }

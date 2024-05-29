@@ -20,6 +20,11 @@
             {
                 Console.WriteLine($"{person.firstNmae} {person.lastName}");
             }
+
+            Console.WriteLine("-------------------------");
+            Fib fibList = new Fib(10);
+            foreach (int p in fibList)
+                Console.WriteLine(p);
         }
     }
 }
